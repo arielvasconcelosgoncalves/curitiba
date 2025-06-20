@@ -16,7 +16,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-image: url("image.png");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     height: 80vh;
@@ -37,7 +37,6 @@ body {
 @media (max-width: 1200px) {
     .container {
         width: 50vw; /* Ajusta a largura da container para ser maior em dispositivos móveis */
-        height: 65vh;
         padding: 25px; /* Reduz o padding para dar mais espaço */
     }
     #countdown {
@@ -59,7 +58,16 @@ body {
 @media (max-width: 600px) {
     .container {
         width: 90vw; /* Aumenta a largura da container para telas ainda menores */
-        height: 70vh; /* Ajusta a altura da container */
+        padding: 15px; /* Reduz o padding */
+    }
+    #countdown {
+        font-size: 20px; /* Ajusta ainda mais o tamanho da contagem regressiva */
+    }
+
+}
+@media (max-width: 500px) {
+    .container {
+        width: 90vw; /* Aumenta a largura da container para telas ainda menores */
         padding: 15px; /* Reduz o padding */
     }
     #countdown {
